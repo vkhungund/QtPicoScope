@@ -1,2 +1,4 @@
 # QtPicoScope
-Qt 5.14 implementation for streaming Picoscope 4424
+Qt 5.14 implementation for streaming Picoscopes
+
+Use QtCharts to Draw Waveform
