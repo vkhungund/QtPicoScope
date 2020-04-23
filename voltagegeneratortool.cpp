@@ -9,12 +9,12 @@ VoltageGeneratorTool::VoltageGeneratorTool(QWidget *parent) :
 
     //Setup basic x-axis and y-axis of Voltage output
     // TODO save these settings in some config file/json for app restart.
-    setupPlot();
+    //setupPlot();
 
     //Create plot axes
 
-    connect(ui->plot->xAxis,SIGNAL(rangeChanged(QCPRange)),this,\
-                            SLOT(xAxisChanged(QCPRange)));
+    //connect(ui->plot->xAxis,SIGNAL(rangeChanged(QCPRange)),this,\
+    //                        SLOT(xAxisChanged(QCPRange)));
 }
 
 VoltageGeneratorTool::~VoltageGeneratorTool()
