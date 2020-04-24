@@ -20,8 +20,8 @@ public:
     ~VoltageGeneratorTool();
 
 private slots:
-    //void xAxisChanged(QCPRange range);
-    //void yAxisChanged(QCPRange range);
+    void xAxisChanged(QCPRange range);
+    void yAxisChanged(QCPRange range);
 
 private:
     Ui::VoltageGeneratorTool *ui;
