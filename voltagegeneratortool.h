@@ -2,7 +2,8 @@
 #define VOTTAGEGENERATORTOOL_H
 
 #include <QMainWindow>
-#include <qcustomplot.h>
+#include <QtCharts/QChartView>
+#include <QtCharts/QLineSeries>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -10,21 +11,22 @@ class VoltageGeneratorTool;
 }
 QT_END_NAMESPACE
 
+QT_CHARTS_USE_NAMESPACE
+
 class VoltageGeneratorTool : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit VoltageGeneratorTool(QWidget *parent = nullptr);
-    void setupPlot();
+    VoltageGeneratorTool(QWidget *parent = nullptr);
     ~VoltageGeneratorTool();
-
-private slots:
-    void xAxisChanged(QCPRange range);
-    void yAxisChanged(QCPRange range);
+    void updateWaveform();
+    void populatePicoscopes();
 
 private:
     Ui::VoltageGeneratorTool *ui;
+    QChartView *m_chartShowWaveform;
+
 };
 
 #endif // VOTTAGEGENERATORTOOL_H

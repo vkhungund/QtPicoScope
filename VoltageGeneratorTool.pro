@@ -1,6 +1,6 @@
-QT       += core gui
+QT       += core gui charts
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++11
 
@@ -18,11 +18,9 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     main.cpp \
     voltagegeneratortool.cpp \
-    qcustomplot.cpp
 
 HEADERS += \
     voltagegeneratortool.h \
-    qcustomplot.h
 
 FORMS += \
     voltagegeneratortool.ui
