@@ -1,3 +1,6 @@
+# User specific files created on opening Qt creator
+*.pro.user
+
 # Prerequisites
 *.d
 
